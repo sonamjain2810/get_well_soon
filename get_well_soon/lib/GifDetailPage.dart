@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:get_well_soon/data/AdService.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:share_plus/share_plus.dart';
@@ -48,7 +49,7 @@ class _GifDetailPageState extends State<GifDetailPage> {
   BannerAd GetBannerAd() {
     return BannerAd(
         size: AdSize.mediumRectangle,
-        adUnitId: Strings.iosAdmobBannerId,
+        adUnitId: AdService.admobBannerAdUnitId,
         listener: BannerAdListener(onAdLoaded: (_) {
           setState(() {
             isBannerAdLoaded = true;

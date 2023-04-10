@@ -30,17 +30,17 @@ class Strings {
 
   static const iosFBBannerId = "266846741590142_270405771234239";
 
-  static const androidAdmobAppId = "ca-app-pub-8179797674906935~3897889625";
+  static const androidAdmobAppId = "ca-app-pub-8179797674906935~2202151532";
 
-  static const androidAdmobBannerId = "ca-app-pub-8179797674906935/7730386794";
+  static const androidAdmobBannerId = "ca-app-pub-8179797674906935/7493419930";
 
   static const androidAdmobInterstitialId =
-      "ca-app-pub-8179797674906935/8452635043";
+      "ca-app-pub-8179797674906935/1165236184";
 
-  static const androidAdmobNativeId = "ca-app-pub-8179797674906935/7139553372";
+  static const androidAdmobNativeId = "ca-app-pub-8179797674906935/7553129686";
 
   static const androidAdmobRewardedId =
-      "ca-app-pub-8179797674906935/5222824710";
+      "ca-app-pub-8179797674906935/9245485305";
 
   static const testDevice = 'c835aea0489176f272e2d174b8d921ca';
 

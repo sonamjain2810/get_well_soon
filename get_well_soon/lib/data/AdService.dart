@@ -51,7 +51,7 @@ class AdService {
   static BannerAd createBannerAd() {
     admobBannerAd = BannerAd(
         size: AdSize.largeBanner,
-        adUnitId: Strings.iosAdmobBannerId,
+        adUnitId: admobBannerAdUnitId,
         listener: BannerAdListener(
           onAdLoaded: (_) {
             isAdmobBannerLoaded = true;
@@ -78,7 +78,7 @@ class AdService {
 
   static createInterstialAd() {
     InterstitialAd.load(
-      adUnitId: Strings.iosAdmobInterstitialId,
+      adUnitId: admobInterstitialAdUnitId,
       request: AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (InterstitialAd ad) {

@@ -212,10 +212,25 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              CustomOnlyTextWidget(
-                                size: size,
-                                color: Colors.lightBlue,
-                                text: "English",
+                              InkWell(
+                                child: CustomOnlyTextWidget(
+                                  size: size,
+                                  color: Colors.lightBlue,
+                                  text: "English",
+                                ),
+                                onTap: () {
+                                  print("English Message Clicked");
+                                  interstitialTag = "lang_english";
+                                  facebookAppEvents.logEvent(
+                                    name: "Message List",
+                                    parameters: {
+                                      'button_id': 'lang_english_button',
+                                    },
+                                  );
+                                  AdService.context = context;
+                                  AdService.interstitialTag = "lang_english";
+                                  AdService.showInterstitialAd();
+                                },
                               ),
                               SizedBox(width: SizeConfig.width(8)),
                               InkWell(
